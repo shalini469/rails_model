@@ -1,0 +1,30 @@
+
+
+<h1>Person Info</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Email</th>
+      <th>Designation</th>
+      <th>Age</th>
+      
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @demos.each do |person_info| %>
+      <tr>
+        <td><%= person_info.name %></td>
+        <td><%= person_info.address%></td>
+        <td><%= person_info.designation %></td>
+        <td><%= person_info.email%></td>
+        <td><%= person_info.age %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
